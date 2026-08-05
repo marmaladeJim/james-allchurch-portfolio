@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
@@ -9,18 +10,30 @@ const navItems = [
 export function Header() {
   return (
     <header className="site-shell mb-10 flex items-end justify-between pt-9 md:mb-14 md:pt-11">
-      <div>
-        <Link
-          href="/"
-          className="block text-[26px] font-medium leading-none tracking-[-0.045em] md:text-[34px]"
-        >
-          James Allchurch
-        </Link>
+      <Link
+        href="/"
+        aria-label="James Allchurch — Home"
+        className="flex items-center gap-4 md:gap-5"
+      >
+        <Image
+          src="/JAicon2.svg"
+          alt=""
+          width={56}
+          height={56}
+          priority
+          className="h-12 w-12 shrink-0 object-contain md:h-14 md:w-14"
+        />
 
-        <p className="mt-2 text-[22px] leading-none tracking-[-0.035em] text-[#8A8A8A] md:text-[29px]">
-          Freelance Motion Designer
-        </p>
-      </div>
+        <span>
+          <span className="block text-[26px] font-medium leading-none tracking-[-0.045em] md:text-[34px]">
+            James Allchurch
+          </span>
+
+          <span className="mt-2 block text-[22px] leading-none tracking-[-0.035em] text-[#8A8A8A] md:text-[29px]">
+            Freelance Motion Designer
+          </span>
+        </span>
+      </Link>
 
       <nav
         aria-label="Primary navigation"
