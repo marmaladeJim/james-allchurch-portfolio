@@ -11,7 +11,7 @@ export function Header() {
     <header className="site-shell flex items-center justify-between py-8 md:py-10">
       <Link
         href="/"
-        className="text-[28px] font-bold leading-none tracking-[0.035em] text-[#111111] md:text-[38px]"
+        className="text-[24px] font-bold leading-none tracking-[0.035em] text-[#111111] md:text-[30px]"
       >
         James Allchurch
       </Link>
