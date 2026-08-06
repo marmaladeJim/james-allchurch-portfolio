@@ -11,7 +11,7 @@ export function Header() {
     <header className="site-shell flex items-center justify-between pt-9 pb-8 md:pt-11 md:pb-10">
       <Link
         href="/"
-        className="text-[26px] md:text-[34px] font-bold leading-none tracking-[-0.045em] text-[#111111]"
+        className="text-[26px] md:text-[34px] font-bold leading-none tracking-[-0.15em] text-[#111111]"
       >
         James Allchurch
       </Link>
