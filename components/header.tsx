@@ -16,7 +16,7 @@ export function Header() {
         className="flex items-center gap-5"
       >
         <Image
-          src="/icon.svg"
+          src="/JAicon2.svg"
           alt=""
           width={52}
           height={52}
