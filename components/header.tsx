@@ -10,6 +10,7 @@ const navItems = [
 export function Header() {
   return (
     <header className="site-shell flex items-center justify-between pt-9 pb-8 md:pt-11 md:pb-10">
+      {/* Logo + Name */}
       <Link
         href="/"
         aria-label="James Allchurch Home"
@@ -17,27 +18,28 @@ export function Header() {
       >
         <Image
           src="/JAicon2.svg"
-          alt=""
-          width={52}
-          height={52}
+          alt="James Allchurch"
+          width={56}
+          height={56}
           priority
-          className="h-12 w-12 shrink-0 md:h-14 md:w-14"
+          className="h-12 w-12 shrink-0 object-contain md:h-14 md:w-14"
         />
 
-        <span className="text-[26px] md:text-[34px] font-medium leading-none tracking-[-0.045em]">
+        <span className="text-[26px] md:text-[34px] font-medium leading-none tracking-[-0.045em] text-[#111111]">
           James Allchurch
         </span>
       </Link>
 
+      {/* Navigation */}
       <nav
         aria-label="Primary navigation"
-        className="flex gap-8 md:gap-12 text-[15px] md:text-[17px]"
+        className="flex gap-10 md:gap-16 text-[26px] md:text-[34px] font-medium leading-none tracking-[-0.045em]"
       >
         {navItems.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className="text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111]"
+            className="text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111] focus-visible:text-[#111111]"
           >
             {item.label}
           </Link>
