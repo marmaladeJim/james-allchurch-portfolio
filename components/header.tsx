@@ -11,7 +11,7 @@ export function Header() {
     <header className="site-shell flex items-center justify-between pt-9 pb-8 md:pt-11 md:pb-10">
       <Link
         href="/"
-        className="text-[26px] md:text-[34px] font-bold leading-none tracking-[-0.15em] text-[#111111]"
+        className="text-[26px] md:text-[34px] font-bold leading-none tracking-[-1.5em] text-[#111111]"
       >
         James Allchurch
       </Link>
@@ -24,7 +24,7 @@ export function Header() {
           <Link
             key={item.href}
             href={item.href}
-            className="text-[22px] md:text-[30px] font-semibold leading-none tracking-[-0.045em] text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111]"
+            className="text-[20px] md:text-[28px] font-semibold leading-none tracking-[-0.045em] text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111]"
           >
             {item.label}
           </Link>
