@@ -53,16 +53,18 @@ export const projects: Project[] = [
   credits: [],
 },
   {
-    slug: "nike-air",
-    title: "Nike Air",
-    category: "Brand Film",
-    image: "/projects/nike.svg",
-    description:
-      "A high-energy brand film pairing bold typography with atmospheric lighting and fast transitions.",
-    role: ["Motion Design", "Animation", "Typography"],
-    vimeoId: "",
-    credits: [],
-  },
+  slug: "game-of-thrones-season-4",
+  title: "Game of Thrones - Season 4 Premiere",
+  category: "Projection Mapping",
+  image: "/projects/game-of-thrones.jpg",
+  description:
+    "Working with Studio Giggle, I helped create this projection-mapped film to celebrate the Game of Thrones Season 4 premiere at Guildhall in London.",
+  role: [
+    "Animator",
+  ],
+  vimeoId: "115794928",
+  credits: [],
+},
   {
     slug: "spectrum",
     title: "Spectrum",
