@@ -5,13 +5,12 @@ import { projects } from "@/data/projects";
 export default function HomePage() {
   return (
     <main className="site-shell">
-      <section className="mx-auto max-w-6xl py-6 md:py-10 text-center">
-        <p className="text-[22px] md:text-[34px] font-normal leading-[1.4] tracking-[-0.02em] text-[#222222]">
-          Hi, I'm Jim. I'm a freelance motion designer based in Cheltenham, UK,
-          working with brands, agencies and studios to create animation and
-          motion graphics.
-        </p>
-      </section>
+     <section className="mx-auto max-w-6xl py-6 text-center md:py-10">
+  <p className="text-[22px] font-normal leading-[1.4] tracking-[-0.02em] text-[#222222] md:text-[34px]">
+    Hi, I'm Jim, a freelance motion designer in Cheltenham, UK. I create
+    animation and motion graphics for brands, agencies and studios.
+  </p>
+</section>
 
       <Showreel />
 
