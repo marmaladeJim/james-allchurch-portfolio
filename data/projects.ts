@@ -31,7 +31,7 @@ export const projects: Project[] = [
     image: "/projects/acp.svg",
     description:
       "A dark, technical brand film exploring material, utility and movement through a restrained visual system.",
-    roles: ["Creative Direction", "Motion Design", "Compositing"],
+    role: ["Creative Direction", "Motion Design", "Compositing"],
     vimeoId: "",
     credits: [],
   },
