@@ -83,7 +83,7 @@ export default async function ProjectPage({
 
      {/* Role */}
 {project.role.length > 0 && (
-  <section className="grid gap-6 border-b border-[#DEDDD8] py-8 md:grid-cols-2 md:py-12">
+  <section className="grid gap-6 border-b border-[#DEDDD8] py-8 md:grid-cols-[150px_1fr] md:py-12">
     <h2 className="text-[18px] font-semibold">
       Role
     </h2>
