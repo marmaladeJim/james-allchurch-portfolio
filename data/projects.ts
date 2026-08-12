@@ -17,7 +17,7 @@ export const projects: Project[] = [
   image: "/projects/adidas-socials.jpg",
   description:
     "A selection of work created with Zero TMC for adidas, designed for use across social media and live events.",
- services: [
+ role: [
   "Motion Design",
   "3D",
 ],
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     image: "/projects/acp.svg",
     description:
       "A dark, technical brand film exploring material, utility and movement through a restrained visual system.",
-    services: ["Creative Direction", "Motion Design", "Compositing"],
+    roles: ["Creative Direction", "Motion Design", "Compositing"],
     vimeoId: "",
     credits: [],
   },
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     image: "/projects/samsung.svg",
     description:
       "A minimal product animation balancing sculptural form, soft light and graphic precision.",
-    services: ["3D Animation", "Look Development", "Compositing"],
+    role: ["3D Animation", "Look Development", "Compositing"],
     vimeoId: "",
     credits: [],
   },
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     image: "/projects/nike.svg",
     description:
       "A high-energy brand film pairing bold typography with atmospheric lighting and fast transitions.",
-    services: ["Motion Design", "Animation", "Typography"],
+    role: ["Motion Design", "Animation", "Typography"],
     vimeoId: "",
     credits: [],
   },
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     image: "/projects/spectrum.svg",
     description:
       "An abstract music visual driven by luminous colour, depth and evolving geometric movement.",
-    services: ["Direction", "Design", "Animation"],
+    role: ["Direction", "Design", "Animation"],
     vimeoId: "",
     credits: [],
   },
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     image: "/projects/nothing.svg",
     description:
       "A monochrome architectural study using repetition, shadow and mechanical motion.",
-    services: ["3D Animation", "Lighting", "Compositing"],
+    role: ["3D Animation", "Lighting", "Compositing"],
     vimeoId: "",
     credits: [],
   },
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     image: "/projects/orbit.svg",
     description:
       "A meditative sequence of orbital motion, subtle distortion and controlled luminosity.",
-    services: ["Motion Design", "Simulation", "Compositing"],
+    role: ["Motion Design", "Simulation", "Compositing"],
     vimeoId: "",
     credits: [],
   },
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     image: "/projects/squarespace.svg",
     description:
       "A graphic brand piece using simple forms, tactile timing and playful spatial relationships.",
-    services: ["Design", "Animation", "Art Direction"],
+    role: ["Design", "Animation", "Art Direction"],
     vimeoId: "",
     credits: [],
   },
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     image: "/projects/parallel.svg",
     description:
       "A dark speculative short exploring identity through dramatic portraiture and digital transformation.",
-    services: ["Direction", "VFX", "Motion Design"],
+    role: ["Direction", "VFX", "Motion Design"],
     vimeoId: "",
     credits: [],
   },
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     image: "/projects/google.svg",
     description:
       "A soft, fluid campaign film combining organic surfaces with a calm and premium visual language.",
-    services: ["Motion Design", "3D Animation", "Look Development"],
+    role: ["Motion Design", "3D Animation", "Look Development"],
     vimeoId: "",
     credits: [],
   },
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     image: "/projects/metamorph.svg",
     description:
       "A polished transformation study featuring liquid-metal surfaces and close-up cinematic detail.",
-    services: ["Direction", "3D Animation", "Compositing"],
+    role: ["Direction", "3D Animation", "Compositing"],
     vimeoId: "",
     credits: [],
   },
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     image: "/projects/beats.svg",
     description:
       "A sound-led brand film built from light pulses, sharp edits and a disciplined monochrome palette.",
-    services: ["Motion Design", "Editing", "Animation"],
+    role: ["Motion Design", "Editing", "Animation"],
     vimeoId: "",
     credits: [],
   },
