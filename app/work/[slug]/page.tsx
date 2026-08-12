@@ -76,7 +76,7 @@ export default async function ProjectPage({
 
       {/* Project description */}
       <section className="border-b border-[#DEDDD8] py-8 md:py-12">
-        <p className="max-w-3xl text-[18px] leading-[1.6] text-[#555555] md:text-[22px]">
+        <p className="text-[18px] leading-[1.6] text-[#555555] md:text-[22px]">
           {project.description}
         </p>
       </section>
