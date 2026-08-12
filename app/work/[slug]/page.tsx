@@ -4,33 +4,112 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProject, projects } from "@/data/projects";
 
-export function generateStaticParams() { return projects.map(({ slug }) => ({ slug })); }
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const project = getProject(slug);
-  return project ? { title: project.title, description: project.description } : {};
+export function generateStaticParams() {
+  return projects.map(({ slug }) => ({ slug }));
 }
 
-export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
+
+  return project
+    ? {
+        title: project.title,
+        description: project.description,
+      }
+    : {};
+}
+
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const project = getProject(slug);
+
   if (!project) notFound();
-  const index = projects.findIndex((item) => item.slug === project.slug);
-  const nextProject = projects[(index + 1) % projects.length];
+
+  const index = projects.findIndex(
+    (item) => item.slug === project.slug
+  );
+
+  const nextProject =
+    projects[(index + 1) % projects.length];
 
   return (
     <main className="site-shell">
-      <div className="mb-8 grid gap-4 md:mb-12 md:grid-cols-[1fr_auto] md:items-end">
-        <div><h1 className="text-[42px] font-medium tracking-[-0.05em] md:text-[82px]">{project.title}</h1><p className="mt-2 text-[18px] text-[#8A8A8A] md:text-[22px]">{project.category} · {project.year}</p></div>
-        <p className="max-w-xl text-[18px] leading-relaxed text-[#555] md:text-right">{project.description}</p>
+
+      {/* Project title */}
+      <div className="mb-6 md:mb-8">
+        <h1 className="text-[32px] font-semibold tracking-[-0.03em] md:text-[48px]">
+          {project.title}
+        </h1>
+
+        <p className="mt-2 text-[16px] text-[#8A8A8A] md:text-[18px]">
+          {project.category}
+        </p>
       </div>
-      <div className="relative aspect-video overflow-hidden bg-black"><Image src={project.image} alt={`${project.title} project artwork`} fill priority className="object-cover" /></div>
-      <section className="grid gap-10 border-b border-[#DEDDD8] py-10 md:grid-cols-2 md:py-16">
-        <h2 className="text-[22px]">Services</h2>
-        <ul className="space-y-2 text-[22px] text-[#555]">{project.services.map((service) => <li key={service}>{service}</li>)}</ul>
+
+      {/* Project video or image */}
+      {project.vimeoId ? (
+        <div className="relative aspect-video overflow-hidden bg-black">
+          <iframe
+            className="absolute inset-0 h-full w-full border-0"
+            src={`https://player.vimeo.com/video/${project.vimeoId}?title=0&byline=0&portrait=0`}
+            title={`${project.title} video`}
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      ) : (
+        <div className="relative aspect-video overflow-hidden bg-black">
+          <Image
+            src={project.image}
+            alt={`${project.title} project artwork`}
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+      )}
+
+      {/* Project description */}
+      <section className="border-b border-[#DEDDD8] py-8 md:py-12">
+        <p className="max-w-3xl text-[18px] leading-[1.6] text-[#555555] md:text-[22px]">
+          {project.description}
+        </p>
       </section>
-      <div className="flex justify-end pt-10"><Link href={`/work/${nextProject.slug}`} className="text-[22px] text-[#8A8A8A] transition-colors hover:text-[#111]">Next Project: {nextProject.title} ↗</Link></div>
+
+      {/* Services */}
+      {project.services.length > 0 && (
+        <section className="grid gap-6 border-b border-[#DEDDD8] py-8 md:grid-cols-2 md:py-12">
+          <h2 className="text-[18px] font-semibold">
+            Services
+          </h2>
+
+          <ul className="space-y-2 text-[18px] text-[#555555]">
+            {project.services.map((service) => (
+              <li key={service}>{service}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Next project */}
+      <div className="flex justify-end pt-10">
+        <Link
+          href={`/work/${nextProject.slug}`}
+          className="text-[18px] text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111]"
+        >
+          Next Project: {nextProject.title} ↗
+        </Link>
+      </div>
+
     </main>
   );
 }
