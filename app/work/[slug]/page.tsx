@@ -44,16 +44,12 @@ export default async function ProjectPage({
   return (
     <main className="site-shell">
 
-      {/* Project title */}
-      <div className="mb-6 md:mb-8">
-        <h1 className="text-[32px] font-semibold tracking-[-0.03em] md:text-[48px]">
-          {project.title}
-        </h1>
-
-        <p className="mt-2 text-[16px] text-[#8A8A8A] md:text-[18px]">
-          {project.category}
-        </p>
-      </div>
+    {/* Project title */}
+<div className="mb-6 md:mb-8">
+  <h1 className="text-[32px] font-semibold tracking-[-0.03em] md:text-[48px]">
+    {project.title}
+  </h1>
+</div>
 
       {/* Project video or image */}
       {project.vimeoId ? (
