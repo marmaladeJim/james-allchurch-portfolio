@@ -65,17 +65,20 @@ export const projects: Project[] = [
   vimeoId: "115794928",
   credits: [],
 },
-  {
-    slug: "spectrum",
-    title: "Spectrum",
-    category: "Music Video",
-    image: "/projects/spectrum.svg",
-    description:
-      "An abstract music visual driven by luminous colour, depth and evolving geometric movement.",
-    role: ["Direction", "Design", "Animation"],
-    vimeoId: "",
-    credits: [],
-  },
+ {
+  slug: "queen-elizabeth-university-hospital",
+  title: "Queen Elizabeth University Hospital Glasgow",
+  category: "Explainer",
+  image: "/projects/queen-elizabeth-hospital.jpg",
+  description:
+    "At Studio Giggle, I directed and animated this mixed-media explainer introducing the Queen Elizabeth University Hospital Glasgow, using photography captured on site.",
+  role: [
+    "Director",
+    "Animator",
+  ],
+  vimeoId: "139060979",
+  credits: [],
+},
   {
     slug: "nothing",
     title: "Nothing",
