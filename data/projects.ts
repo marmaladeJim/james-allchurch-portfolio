@@ -11,18 +11,17 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    slug: "echoes",
-    title: "Echoes",
-    category: "Title Sequence",
-    year: "2026",
-    image: "/projects/echoes.svg",
-    description:
-      "A cinematic title sequence built around reflective forms, deep contrast and precise rhythmic movement.",
-    services: ["Motion Design", "Art Direction", "Animation"],
-    vimeoId: "",
-    credits: [],
-  },
+{
+  slug: "adidas-socials",
+  title: "Adidas Socials",
+  category: "Social Content",
+  year: "2024",
+  image: "/projects/adidas-socials.jpg",
+  description: "",
+  services: [],
+  vimeoId: "909428103",
+  credits: [],
+},
   {
     slug: "a-cp-company",
     title: "A CP Company",
