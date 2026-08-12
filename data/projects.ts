@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
   slug: "ncnr",
   title: "NCNR",
-  category: "Short Film",
+  category: "Explainer",
   image: "/projects/ncnr.jpg",
   description:
     "Working with Beeston Media, I directed and animated this short film for the National Centre for Nuclear Robotics.",
