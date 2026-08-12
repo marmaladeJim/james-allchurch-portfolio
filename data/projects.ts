@@ -19,7 +19,10 @@ export const projects: Project[] = [
   image: "/projects/adidas-socials.jpg",
   description:
     "A selection of work created with Zero TMC for adidas, designed for use across social media and live events.",
-  services: [],
+ services: [
+  "Motion Design",
+  "3D",
+],
   vimeoId: "909428103",
   credits: [],
 },
