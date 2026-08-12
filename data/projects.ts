@@ -79,17 +79,21 @@ export const projects: Project[] = [
   vimeoId: "139060979",
   credits: [],
 },
-  {
-    slug: "nothing",
-    title: "Nothing",
-    category: "Product Film",
-    image: "/projects/nothing.svg",
-    description:
-      "A monochrome architectural study using repetition, shadow and mechanical motion.",
-    role: ["3D Animation", "Lighting", "Compositing"],
-    vimeoId: "",
-    credits: [],
-  },
+ {
+  slug: "tellermate-cash-office",
+  title: "Cash Office by Tellermate",
+  category: "Explainer",
+  image: "/projects/tellermate-cash-office.jpg",
+  description:
+    "A direct to client project for Tellermate, where I directed, illustrated and animated an explainer film for their cash counting system.",
+  role: [
+    "Director",
+    "Illustrator",
+    "Animator",
+  ],
+  vimeoId: "157121784",
+  credits: [],
+},
   {
     slug: "orbit",
     title: "Orbit",
