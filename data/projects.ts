@@ -25,16 +25,20 @@ export const projects: Project[] = [
   credits: [],
 },
   {
-    slug: "a-cp-company",
-    title: "A CP Company",
-    category: "Brand Film",
-    image: "/projects/acp.svg",
-    description:
-      "A dark, technical brand film exploring material, utility and movement through a restrained visual system.",
-    role: ["Creative Direction", "Motion Design", "Compositing"],
-    vimeoId: "",
-    credits: [],
-  },
+  slug: "ncnr",
+  title: "NCNR",
+  category: "Short Film",
+  image: "/projects/ncnr.jpg",
+  description:
+    "Working with Beeston Media, I directed and animated this short film for the National Centre for Nuclear Robotics.",
+  role: [
+    "Director",
+    "Illustrator",
+    "Animator",
+  ],
+  vimeoId: "909041024",
+  credits: [],
+},
   {
     slug: "samsung",
     title: "Samsung",
