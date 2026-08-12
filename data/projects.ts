@@ -4,7 +4,7 @@ export type Project = {
   category: string;
   image: string;
   description: string;
-  services: string[];
+  role: string[];
   vimeoId?: string;
   credits?: string[];
 };
