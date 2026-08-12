@@ -38,6 +38,7 @@ export const projects: Project[] = [
   ],
   vimeoId: "909041024",
   credits: [],
+},
 {
   slug: "adidas-city-run",
   title: "Adidas - City Run",
