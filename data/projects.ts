@@ -38,18 +38,19 @@ export const projects: Project[] = [
   ],
   vimeoId: "909041024",
   credits: [],
+{
+  slug: "adidas-city-run",
+  title: "Adidas - City Run",
+  category: "Social Content",
+  image: "/projects/adidas-city-run.jpg",
+  description:
+    "Working with Zero TMC, I animated this energetic 15-second film promoting an upcoming running event through London.",
+  role: [
+    "Animator",
+  ],
+  vimeoId: "909428636",
+  credits: [],
 },
-  {
-    slug: "samsung",
-    title: "Samsung",
-    category: "Product Film",
-    image: "/projects/samsung.svg",
-    description:
-      "A minimal product animation balancing sculptural form, soft light and graphic precision.",
-    role: ["3D Animation", "Look Development", "Compositing"],
-    vimeoId: "",
-    credits: [],
-  },
   {
     slug: "nike-air",
     title: "Nike Air",
