@@ -81,20 +81,20 @@ export default async function ProjectPage({
         </p>
       </section>
 
-      {/* Services */}
-      {project.services.length > 0 && (
-        <section className="grid gap-6 border-b border-[#DEDDD8] py-8 md:grid-cols-2 md:py-12">
-          <h2 className="text-[18px] font-semibold">
-            Services
-          </h2>
+     {/* Role */}
+{project.role.length > 0 && (
+  <section className="grid gap-6 border-b border-[#DEDDD8] py-8 md:grid-cols-2 md:py-12">
+    <h2 className="text-[18px] font-semibold">
+      Role
+    </h2>
 
-          <ul className="space-y-2 text-[18px] text-[#555555]">
-            {project.services.map((service) => (
-              <li key={service}>{service}</li>
-            ))}
-          </ul>
-        </section>
-      )}
+    <ul className="space-y-2 text-[18px] text-[#555555]">
+      {project.role.map((role) => (
+        <li key={role}>{role}</li>
+      ))}
+    </ul>
+  </section>
+)}
 
       {/* Next project */}
       <div className="flex justify-end pt-10">
