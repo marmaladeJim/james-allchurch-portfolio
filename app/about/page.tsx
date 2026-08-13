@@ -8,7 +8,7 @@ export default function AboutPage() {
         {/* Bio */}
         <div className="space-y-6 text-[19px] leading-[1.6] text-[#555555] md:text-[24px]">
           <p>
-            I’m a freelance motion designer based in Cheltenham, UK.
+            I’m Jim, a freelance motion designer based in Cheltenham, UK.
           </p>
 
           <p>
