@@ -49,23 +49,25 @@ export default function ReelPage() {
 
         <div className="text-[15px] leading-relaxed md:text-[17px]">
           {credits.map(([time, project, role]) => (
-            <div
-              key={`${time}-${project}`}
-              className="grid grid-cols-[55px_1fr] gap-3 border-t border-[#DEDDD8] py-2.5 md:grid-cols-[70px_1fr_auto] md:gap-6"
-            >
-              <span className="text-[#8A8A8A]">
-                {time}
-              </span>
+  <div
+    key={`${time}-${project}`}
+    className="grid grid-cols-[55px_1fr] gap-3 border-t border-[#DEDDD8] py-2.5 md:grid-cols-[70px_1fr] md:gap-6"
+  >
+    <span className="text-[#8A8A8A]">
+      {time}
+    </span>
 
-              <span className="text-[#333333]">
-                {project}
-              </span>
+    <div className="flex flex-wrap items-baseline gap-x-2">
+      <span className="text-[#333333]">
+        {project}
+      </span>
 
-              <span className="col-start-2 text-[#8A8A8A] md:col-start-auto">
-                {role}
-              </span>
-            </div>
-          ))}
+      <span className="text-[#8A8A8A]">
+        — {role}
+      </span>
+    </div>
+  </div>
+))}
         </div>
       </section>
 
