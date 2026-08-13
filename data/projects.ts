@@ -21,7 +21,7 @@ export const projects: Project[] = [
   "Motion Design",
   "3D",
 ],
-  vimeoId: ["909428103"],
+  vimeoIds: ["909428103"],
   credits: [],
 },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: ["909041024"],
+  vimeoIds: ["909041024"],
   credits: [],
 },
 {
@@ -49,7 +49,7 @@ export const projects: Project[] = [
   role: [
     "Animator",
   ],
-  vimeoId: ["909428636"],
+  vimeoIds: ["909428636"],
   credits: [],
 },
   {
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   role: [
     "Animator",
   ],
-  vimeoId: ["115794928"],
+  vimeoIds: ["115794928"],
   credits: [],
 },
  {
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     "Director",
     "Animator",
   ],
-  vimeoId: ["139060979"],
+  vimeoIds: ["139060979"],
   credits: [],
 },
  {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: ["157121784"],
+  vimeoIds: ["157121784"],
   credits: [],
 },
  {
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: ["200141635"],
+  vimeoIds: ["200141635"],
   credits: [],
 },
 {
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: ["281262122"],
+  vimeoIds: ["281262122"],
   credits: [],
 },
 {
@@ -134,10 +134,9 @@ export const projects: Project[] = [
   role: [
     "Director",
     "Illustrator",
-    "2D Animator",
-    "3D Animator",
+    "Animator",
   ],
-  vimeoId: ["139131695"],
+  vimeoIds: ["139131695"],
   credits: [],
 },
 {
@@ -150,10 +149,9 @@ export const projects: Project[] = [
   role: [
     "Director",
     "Illustrator",
-    "2D Animator",
-    "3D Animator",
+    "Animator",
   ],
-  vimeoId: ["139110815"],
+  vimeoIds: ["139110815"],
   credits: [],
 },
 {
@@ -166,10 +164,9 @@ export const projects: Project[] = [
   role: [
     "Director",
     "Illustrator",
-    "2D Animator",
-    "3D Animator",
+    "Animator",
   ],
-  vimeoId: ["138590083"],
+  vimeoIds: ["138590083"],
   credits: [],
 },
 {
@@ -182,10 +179,9 @@ export const projects: Project[] = [
   role: [
     "Director",
     "Illustrator",
-    "2D Animator",
-    "3D Animator",
+    "Animator",
   ],
-  vimeoId: ["140711714"],
+  vimeoIds: ["140711714"],
   credits: [],
 },
   {
