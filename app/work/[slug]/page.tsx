@@ -51,28 +51,35 @@ export default async function ProjectPage({
   </h1>
 </div>
 
-      {/* Project video or image */}
-      {project.vimeoId ? (
-        <div className="relative aspect-video overflow-hidden bg-black">
-          <iframe
-            className="absolute inset-0 h-full w-full border-0"
-            src={`https://player.vimeo.com/video/${project.vimeoId}?title=0&byline=0&portrait=0`}
-            title={`${project.title} video`}
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-      ) : (
-        <div className="relative aspect-video overflow-hidden bg-black">
-          <Image
-            src={project.image}
-            alt={`${project.title} project artwork`}
-            fill
-            priority
-            className="object-cover"
-          />
-        </div>
-      )}
+    {/* Project video(s) or image */}
+{project.vimeoIds && project.vimeoIds.length > 0 ? (
+  <div className="space-y-4 md:space-y-6">
+    {project.vimeoIds.map((vimeoId, index) => (
+      <div
+        key={vimeoId}
+        className="relative aspect-video overflow-hidden bg-black"
+      >
+        <iframe
+          className="absolute inset-0 h-full w-full border-0"
+          src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
+          title={`${project.title} video ${index + 1}`}
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    ))}
+  </div>
+) : (
+  <div className="relative aspect-video overflow-hidden bg-black">
+    <Image
+      src={project.image}
+      alt={`${project.title} project artwork`}
+      fill
+      priority
+      className="object-cover"
+    />
+  </div>
+)}
 
       {/* Project description */}
       <section className="border-b border-[#DEDDD8] py-8 text-center md:py-12">
