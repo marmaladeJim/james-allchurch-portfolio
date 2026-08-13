@@ -5,7 +5,7 @@ export type Project = {
   image: string;
   description: string;
   role: string[];
-  vimeoId?: string;
+  vimeoIds?: string[];
   credits?: string[];
 };
 
@@ -21,7 +21,7 @@ export const projects: Project[] = [
   "Motion Design",
   "3D",
 ],
-  vimeoId: "909428103",
+  vimeoId: ["909428103"],
   credits: [],
 },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: "909041024",
+  vimeoId: ["909041024"],
   credits: [],
 },
 {
@@ -49,7 +49,7 @@ export const projects: Project[] = [
   role: [
     "Animator",
   ],
-  vimeoId: "909428636",
+  vimeoId: ["909428636"],
   credits: [],
 },
   {
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   role: [
     "Animator",
   ],
-  vimeoId: "115794928",
+  vimeoId: ["115794928"],
   credits: [],
 },
  {
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     "Director",
     "Animator",
   ],
-  vimeoId: "139060979",
+  vimeoId: ["139060979"],
   credits: [],
 },
  {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: "157121784",
+  vimeoId: ["157121784"],
   credits: [],
 },
  {
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: "200141635",
+  vimeoId: ["200141635"],
   credits: [],
 },
 {
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     "Illustrator",
     "Animator",
   ],
-  vimeoId: "281262122",
+  vimeoId: ["281262122"],
   credits: [],
 },
 {
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     "2D Animator",
     "3D Animator",
   ],
-  vimeoId: "139131695",
+  vimeoId: ["139131695"],
   credits: [],
 },
 {
@@ -153,7 +153,7 @@ export const projects: Project[] = [
     "2D Animator",
     "3D Animator",
   ],
-  vimeoId: "139110815",
+  vimeoId: ["139110815"],
   credits: [],
 },
 {
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     "2D Animator",
     "3D Animator",
   ],
-  vimeoId: "138590083",
+  vimeoId: ["138590083"],
   credits: [],
 },
 {
@@ -185,20 +185,27 @@ export const projects: Project[] = [
     "2D Animator",
     "3D Animator",
   ],
-  vimeoId: "140711714",
+  vimeoId: ["140711714"],
   credits: [],
 },
   {
-    slug: "beats-by-dr-dre",
-    title: "Beats By Dr. Dre",
-    category: "Brand Film",
-    image: "/projects/beats.svg",
-    description:
-      "A sound-led brand film built from light pulses, sharp edits and a disciplined monochrome palette.",
-    role: ["Motion Design", "Editing", "Animation"],
-    vimeoId: "",
-    credits: [],
-  },
+  slug: "previous-showreels",
+  title: "Previous Showreels",
+  category: "Showreels",
+  image: "/projects/previous-showreels.jpg",
+  description:
+    "A collection of previous showreels, bringing together motion design, animation and other projects from over the years.",
+  role: [
+    "Director",
+    "Illustrator",
+    "Animator",
+  ],
+  vimeoIds: [
+    "138286755",
+    "425431968",
+  ],
+  credits: [],
+},
 ];
 
 export function getProject(slug: string) {
