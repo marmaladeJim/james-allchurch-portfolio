@@ -1,4 +1,52 @@
-import type { Metadata } from "next";
+import Image from "next/image";
+
+export default function AboutPage() {
+  return (
+    <main className="site-shell">
+      <section className="grid items-center gap-10 py-10 md:grid-cols-[1.4fr_0.6fr] md:gap-16 md:py-16">
+        
+        {/* Bio */}
+        <div className="space-y-6 text-[19px] leading-[1.6] text-[#555555] md:text-[24px]">
+          <p>
+            I’m a freelance motion designer based in Cheltenham, UK.
+          </p>
+
+          <p>
+            I’ve been creating motion design and animation for over 15 years,
+            and I like to bring a thoughtful, engaging approach to every project.
+          </p>
+
+          <p>
+            I’ve worked with agencies and studios in the UK and US, as well as
+            directly with clients, helping bring ideas and brands to life.
+          </p>
+
+          <p>
+            I’m typically hired for animation roles, using After Effects for
+            motion graphics, character animation and compositing. I also
+            illustrate and design work from scratch, bring existing designs and
+            brand systems to life, and like to mix in 3D and editing when a
+            project calls for it.
+          </p>
+        </div>
+
+        {/* Portrait */}
+        <div className="flex justify-center md:justify-end">
+          <div className="relative aspect-square w-full max-w-[320px] overflow-hidden rounded-full">
+            <Image
+              src="/about.jpg"
+              alt="Jim Allchurch"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+      </section>
+    </main>
+  );
+}import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "About" };
 
