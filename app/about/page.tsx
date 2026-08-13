@@ -12,7 +12,7 @@ export default function AboutPage() {
 
         <div className="space-y-6 text-[19px] leading-[1.6] text-[#555555] md:text-[24px]">
           <p>
-            I’m a freelance motion designer based in Cheltenham, UK.
+            I’m Jim, a freelance motion designer based in Cheltenham, UK.
           </p>
 
           <p>
@@ -27,14 +27,14 @@ export default function AboutPage() {
 
           <p>
             I’m typically hired for animation roles, using After Effects for
-            motion graphics, character animation and compositing. I also
-            illustrate and design work from scratch, as well as bringing
+            motion graphics, character animation and compositing. I am equally
+            happy designing and illustrating work from scratch or bringing 
             existing designs and brand systems to life.
           </p>
 
           <p>
-            I also enjoy bringing 3D into the mix and will happily jump into
-            an edit when a project needs it.
+            There are often times where I will bring 3D into the mix and 
+            will jump into an edit when a project needs it.
           </p>
         </div>
 
