@@ -17,16 +17,15 @@ export default function AboutPage() {
           </p>
 
           <p>
-            I’ve worked with agencies and studios in the UK and US, as well as
+            I work with agencies and studios in the UK and US, as well as
             directly with clients, helping bring ideas and brands to life.
           </p>
 
           <p>
             I’m typically hired for animation roles, using After Effects for
-            motion graphics, character animation and compositing. I also
-            illustrate and design work from scratch, bring existing designs and
-            brand systems to life, and like to mix in 3D and editing when a
-            project calls for it.
+            motion graphics, character animation and compositing. I can
+            illustrate and design work from scratch or bring existing designs and
+            brand systems to life. I also enjoy bringing 3D into the mix and will happily jump into an edit when a project needs it.
           </p>
         </div>
 
