@@ -39,6 +39,20 @@ export default function AboutPage() {
         </div>
 
       </section>
+{/* Selected Clients */}
+<section className="border-t border-[#DEDDD8] py-10 md:py-14">
+  <h2 className="mb-6 text-[16px] font-semibold text-[#111111] md:text-[18px]">
+    Selected Clients
+  </h2>
+
+  <Image
+    src="/client-list.png"
+    alt="Selected clients"
+    width={900}
+    height={403}
+    className="h-auto w-full max-w-[900px]"
+  />
+</section>
     </main>
   );
 }
