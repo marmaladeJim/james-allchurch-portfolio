@@ -3,7 +3,7 @@ import { EmailIcon, LinkedInIcon, VimeoIcon } from "@/components/icons";
 const socialLinks = {
   email: "mailto:jimallchurch@gmail.com",
   linkedin: "https://www.linkedin.com/",
-  vimeo: "https://vimeo.com/425431968",
+  vimeo: "https://vimeo.com/user13227551",
 };
 
 export function Footer() {
