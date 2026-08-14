@@ -35,12 +35,14 @@ export default async function ProjectPage({
   if (!project) notFound();
 
   const index = projects.findIndex(
-    (item) => item.slug === project.slug
-  );
+  (item) => item.slug === project.slug
+);
 
-  const nextProject =
-    projects[(index + 1) % projects.length];
+const previousProject =
+  projects[(index - 1 + projects.length) % projects.length];
 
+const nextProject =
+  projects[(index + 1) % projects.length];
   return (
     <main className="site-shell">
 
@@ -104,14 +106,21 @@ export default async function ProjectPage({
 )}
 
       {/* Next project */}
-      <div className="flex justify-end pt-10">
-        <Link
-          href={`/work/${nextProject.slug}`}
-          className="text-[18px] text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111]"
-        >
-          Next Project: {nextProject.title} ↗
-        </Link>
-      </div>
+      <div className="flex items-center justify-between pt-10">
+  <Link
+    href={`/work/${previousProject.slug}`}
+    className="text-[18px] text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111]"
+  >
+    ← Previous Project: {previousProject.title}
+  </Link>
+
+  <Link
+    href={`/work/${nextProject.slug}`}
+    className="text-[18px] text-[#8A8A8A] transition-colors duration-200 hover:text-[#111111]"
+  >
+    Next Project: {nextProject.title} →
+  </Link>
+</div>
 
     </main>
   );
