@@ -100,7 +100,7 @@ export const projects: Project[] = [
   category: "Explainer",
   image: "/projects/notechain.jpg",
   description:
-    "A 2D explainer combining motion graphics and character animation to introduce Notechain, a software platform created by Layer 7.",
+    "A 2D explainer combining motion graphics and character animation to introduce Notechain, a software platform created by 7 Layer .",
   role: [
     "Director",
     "Illustrator",
