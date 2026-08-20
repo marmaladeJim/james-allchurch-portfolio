@@ -25,4 +25,4 @@ Open `http://localhost:3000`.
 4. Update project descriptions and services in `data/projects.ts`.
 
 ## Deploy
-Push the folder to GitHub, import the repository into Vercel, and use the default Next.js settings. Vercel detects Next.js automatically.
+Push the folder to GitHub, import the repository into Vercel, and use the default Next.js settings. Vercel detects Next.js automatically..
