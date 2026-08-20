@@ -2,7 +2,7 @@ import { EmailIcon, LinkedInIcon, VimeoIcon } from "@/components/icons";
 
 const socialLinks = {
   email: "mailto:jimallchurch@gmail.com",
-  linkedin: "https://www.linkedin.com/",
+  linkedin: "https://www.linkedin.com/in/jamesallchurch/",
   vimeo: "https://vimeo.com/user13227551",
 };
 
