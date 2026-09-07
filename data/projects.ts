@@ -17,7 +17,7 @@ export const projects: Project[] = [
   image: "/projects/QuantumFuture_thumb.jpg",
   description:
     "How do you visualise superposition, quantum computing and wave–particle duality? Our Quantum Future is a feature-length documentary exploring the rise of quantum technology and what it could mean for the future.\n\nIt was a privilege to be asked to work on the project, designing and animating several sequences that help explain some of the key concepts behind this emerging technology.",
-  role: "Motion Designer",
+  role: ["Motion Designer"],
   vimeoId: "1223717441",
   credits: [
     "Director: Guy Ellis",
