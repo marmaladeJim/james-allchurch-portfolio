@@ -83,12 +83,43 @@ const nextProject =
   </div>
 )}
 
-      {/* Project description */}
-      <section className="border-b border-[#DEDDD8] py-8 text-center md:py-12">
-        <p className="text-[18px] leading-[1.6] text-[#555555] md:text-[22px]">
-          {project.description}
+     {/* Project description */}
+<section className="border-b border-[#DEDDD8] py-8 text-center md:py-12">
+  <div className="mx-auto max-w-[900px] text-[18px] leading-[1.6] text-[#555555] md:text-[22px]">
+    {project.description.split("\n\n").map((paragraph, index) => {
+      if (
+        project.descriptionLink &&
+        project.descriptionLinkText &&
+        paragraph.includes(project.descriptionLinkText)
+      ) {
+        const [before, after] = paragraph.split(
+          project.descriptionLinkText
+        );
+
+        return (
+          <p key={index} className={index > 0 ? "mt-5" : ""}>
+            {before}
+            <a
+              href={project.descriptionLink}
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4 transition-colors duration-200 hover:text-[#111111]"
+            >
+              {project.descriptionLinkText}
+            </a>
+            {after}
+          </p>
+        );
+      }
+
+      return (
+        <p key={index} className={index > 0 ? "mt-5" : ""}>
+          {paragraph}
         </p>
-      </section>
+      );
+    })}
+  </div>
+</section>
 
      {/* Role */}
 {project.role.length > 0 && (
