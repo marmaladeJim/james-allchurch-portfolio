@@ -4,6 +4,7 @@ export type Project = {
   category: string;
   image: string;
   description: string;
+  descriptionLinkText?: string;
   descriptionLink?: string;
   role: string[];
   vimeoIds: string[];
