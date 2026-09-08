@@ -27,6 +27,14 @@ export const projects: Project[] = [
     "Director: Guy Ellis",
     "Motion Design: James Allchurch and George Judd",
   ],
+  stills: [
+  "/projects/QuantumFuture_still_1.jpg",
+  "/projects/QuantumFuture_still_2.jpg",
+  "/projects/QuantumFuture_still_3.jpg",
+  "/projects/QuantumFuture_still_4.jpg",
+  "/projects/QuantumFuture_still_5.jpg",
+  "/projects/QuantumFuture_still_6.jpg",
+],
 },
   {
   slug: "adidas-socials",
