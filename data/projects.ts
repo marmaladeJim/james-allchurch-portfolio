@@ -9,6 +9,7 @@ export type Project = {
   role: string[];
   vimeoIds: string[];
   credits: string[];
+  stills?: string[];
 };
 
 export const projects: Project[] = [
