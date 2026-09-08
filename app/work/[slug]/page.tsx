@@ -121,6 +121,24 @@ const nextProject =
   </div>
 </section>
 
+      {/* Project stills */}
+{project.stills && project.stills.length > 0 && (
+  <section className="border-b border-[#DEDDD8] py-8 md:py-12">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
+      {project.stills.map((still, index) => (
+        <div key={still} className="relative overflow-hidden">
+          <Image
+            src={still}
+            alt={`${project.title} still ${index + 1}`}
+            width={1600}
+            height={900}
+            className="h-auto w-full"
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+)}
      {/* Role */}
 {project.role.length > 0 && (
   <section className="grid gap-6 border-b border-[#DEDDD8] py-8 md:grid-cols-[150px_1fr] md:py-12">
